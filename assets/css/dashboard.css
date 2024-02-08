@@ -1,0 +1,105 @@
+.navPrincipale >.nav-tabs {
+    background-color: #1c768f13;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navPrincipale>.nav-tabs>.nav-item>.nav-link {
+    color:#0b79b9 !important;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+/*
+.nav-link:hover {
+    color: #032539;
+    background-color: #fa9a1c;
+    border-color: #032539;
+}
+
+.nav-link.active {
+    background-color: #032539;
+    color: #ffffff;
+    border-color: #032539;
+}
+
+.tab-content {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+} */
+
+/* Custom styling for checkboxes */
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #28a745 !important;
+    /* Change checkbox color when checked */
+    border-color: #28a745 !important;
+    /* Change checkbox border color when checked */
+}
+
+.custom-checkbox .custom-control-input:disabled~.custom-control-label::before {
+    background-color: #6c757d;
+    /* Change checkbox color when disabled */
+}
+
+.custom-checkbox .custom-control-label::before {
+    width: 1.5em;
+    /* Increase checkbox size */
+    height: 1.5em;
+    /* Increase checkbox size */
+}
+
+.Dashcard >.card{
+    
+    box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.336);
+}
+.Dashcard > .card >h3{
+    text-transform: capitalize;
+    color: #032539;
+    font-size: 20px;
+
+}
+
+.card > table> td{
+    text-transform: capitalize;
+    font-size: 16px !important;
+
+}
+
+
+
+tr > .col-6{
+    font-weight: 600 !important;
+    color: #1c768f;
+}
+tr > .col-4{
+    font-weight: 600 !important;
+    margin-bottom: 7px !important;
+    color:#fa9a1c;
+    
+    border-radius: 8px;
+    text-align: start;
+    
+}
+.btn-dark,button{
+    height: 40px !important;
+    vertical-align: middle !important;
+    padding-bottom: 15px !important;
+    
+}
+.btn-danger{
+    border-color: aliceblue !important;
+    background-color: rgba(204, 56, 56, 0.87) !important;
+}
+.btn-danger:hover{
+    background-color: rgba(231, 10, 10, 0.87) !important;
+    border-color: aliceblue !important;
+
+}

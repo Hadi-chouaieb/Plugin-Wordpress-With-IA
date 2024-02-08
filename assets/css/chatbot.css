@@ -1,0 +1,15 @@
+.input-group > input,.btn{
+    margin: 10px;
+    background-color: transparent !important;
+    height: 50px;
+    color: white !important;
+    border-color:gray !important;
+} 
+.btn:hover{
+    background-color: cadetblue !important;
+}
+.ChatDusc{
+    border: none !important;
+    box-shadow: 2px 3px 10px black;
+    max-height: 400px !important;
+}

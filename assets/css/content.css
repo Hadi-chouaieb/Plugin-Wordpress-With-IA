@@ -1,0 +1,301 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+  @media (max-width: 576px) {
+    .btn {
+        margin-top: 2rem;
+    }
+    .tit {
+        top: 0;
+        margin-top: 140px !important;
+        
+        transition: 2s;
+    }
+    #inologo{
+      text-align: center;
+    }
+}
+
+a {
+  text-decoration: none !important;
+  animation: none;
+  
+}
+.cc1::after{
+  content: " ✨";
+  position: absolute;
+  width: 20px;
+  margin-left: 4Px;
+  height: 20px;
+}
+
+.cc1 {
+  color: #fcfcfc !important;
+  text-align: center;
+  font-weight: 600 !important;
+  background-color: rgba(32, 30, 30, 0.527) !important;
+  margin: 5px;
+  height: 35px !important;
+  padding-top: 5px;
+  border-radius: 8px;
+  width: 140Px;
+  vertical-align: middle;
+}
+
+.all{
+    transition:2s !important;
+    transform: translate(4px,5px);
+    font-weight: 700;
+    
+}
+
+.description{
+    font-size: 9px !important;
+    color: gray !important;
+}
+
+.selectType{
+    margin-top: 20px;
+    height: 30px !important;
+}
+
+
+textarea{
+    /* background-color:#776ab965 !important; */
+    box-shadow:  2px 3px 6px rgba(12, 0, 0, 0.644) !important;
+    font-weight: 400 !important;
+    font-family: 'Exo 2', sans-serif !important;
+    transition: 1s !important;
+}
+input,select{
+    font-weight: 600 !important;
+    transition: 2s !important;
+    box-shadow:  2px 3px 6px rgba(178, 205, 247, 0.644) !important;
+
+}
+select{
+    border-radius: 8px !important;
+    border-color: #1C768F !important;
+    font-family: 'Exo 2', sans-serif !important;
+}
+
+select::after {
+    content: '\25BC'; /* Unicode character for a downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border-radius: 8px !important;
+    pointer-events: none;
+}
+option{
+  font-family: 'Exo 2', sans-serif !important;
+    font-weight: 600;
+    transition: 2s;
+    border-radius: 20px;
+}
+textarea:focus , input:focus , select:focus{
+    transition: 2s;
+    
+    border-color:#fa9a1c !important;
+}
+nav{
+    margin-right: 20px !important;
+    border-radius: 8px;
+    background-color:#FA991C !important;
+}
+#inologo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    
+    position: relative;
+
+    transition: 2s !important;
+}
+#btn4{
+    height: 50px;;
+}
+
+
+.btn-dark{
+  font-family: 'Exo 2', sans-serif !important;
+    background-color:#032539 !important;
+    border-color:  #032539!important;
+    box-shadow: 2px 3px 12px #032539 ;
+}
+.btn-dark:hover{
+    background-color:#1C768F!important;
+    border-color: #1C768F !important;
+    color: white;
+    
+}
+.disabled:hover{
+    cursor: not-allowed !important;
+}
+
+
+.tit {
+  /* position: absolute !important; */
+  margin-top: 20px !important;
+  margin-left: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: rgb(230, 225, 225);
+  font-size: 24px;
+  text-shadow: 2px 3px 2px #000000d2;
+  font-family: 'Monoton', sans-serif;
+  transition: 2s;
+}
+
+.h4,.h3,.h5{
+    text-transform: uppercase;
+    /* font-family: 'Monoton', sans-serif; */
+    color:#1C768F ; 
+    font-weight: 500;
+    text-shadow: 1px 1px 2px  #060241;
+    font-family: 'Exo 2', sans-serif !important;
+}
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:#FA991C; /* Set the color of the thumb */
+    transition: 2s !important;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #FA991C; /* Set the color of the thumb on hover */
+    transition: 2s !important;
+    border-radius: 2px;
+
+  }
+
+
+
+
+  /* loder code */
+
+  .loader {
+    color: #FFF;
+    position: relative;
+    
+    z-index: 55;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    
+  }
+  .loader::before {
+    content: '';  
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+    height: 28px;
+    width: 5.15px;
+    background: currentColor;
+    box-sizing: border-box;
+    animation: animloader1 1s linear infinite alternate;
+  }
+  .loader::after {
+    content: '';  
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 127px;
+    top: 2px;
+    border-radius: 50%;
+    background: red;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite alternate;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: translate(0px, 0px) scaleX(1);
+    }
+    14% {
+      transform: translate(-12px, -16px) scaleX(1.05);
+    }
+    28% {
+      transform: translate(-27px, -28px) scaleX(1.07);
+    }
+    42% {
+      transform: translate(-46px, -35px) scaleX(1.1);
+    }
+    57% {
+      transform: translate(-70px, -37px) scaleX(1.1);
+    }
+    71% {
+      transform: translate(-94px, -32px) scaleX(1.07);
+    }
+    85% {
+      transform: translate(-111px, -22px) scaleX(1.05);
+    }
+    100% {
+      transform: translate(-125px, -9px) scaleX(1);
+    }
+  }
+  
+  @keyframes animloader1 {
+    0% {
+      box-shadow: 0 -6px, -122.9px -8px;
+    }
+    25%, 75% {
+      box-shadow: 0 0px, -122.9px -8px;
+    }
+    100% {
+      box-shadow: 0 0px, -122.9px -16px;
+    }
+  }
+
+  .text-start{
+    font-size: 12px;
+    margin-left: -10px;
+    font-family:sans-serif;
+  }
+  
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.062);
+    display: none;
+    backdrop-filter: blur(4px);
+}
+
+.popup {
+    height: 100px;
+    background-color:#032539e1 ;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 1s;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.text-cl{
+    margin-top: 10px;
+    color:#FA991C;
+    font-weight: 900;
+    text-shadow: 2px 1px black;
+
+}
+#wpfooter{
+  display: none !important;
+}
