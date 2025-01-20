@@ -7,7 +7,7 @@ use OpenAI\API\Completions;
 function generateAi(){
     
 
-    // $open_ai_key='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';
+ 
     // $open_ai = new OpenAi($open_ai_key); //this for the key of ia of user lmouhem ba3d tt7at fl data base 
     
     $model = $_POST["GptModel"];
@@ -16,7 +16,7 @@ function generateAi(){
     
     $topic = $_POST["topic"];
     
-    $apiKey = "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";
+    $apiKey = "";
     $client = new OpenAI(['api_key' => $apiKey]);
     try {
         // Make your OpenAI API request here
